@@ -2,7 +2,8 @@
 
 > **Stop paying thousands of dollars to SaaS observability vendors. Claim complete data sovereignty, eliminate external telemetry leaks, and deploy a hardened 13-service observability pipeline in minutes.**
 >
-> 🌐 **Live Web Application Demo**: [https://llm-obs-web-app-9664.web.app](https://llm-obs-web-app-9664.web.app) | **Direct Cloud Run Backend**: [https://web-app-prod-4aq3kyjfra-el.a.run.app](https://web-app-prod-4aq3kyjfra-el.a.run.app)
+> 🌐 **Interactive Frontend Demo (UI Preview)**: [https://llm-obs-web-app-9664.web.app](https://llm-obs-web-app-9664.web.app) | **Direct Cloud Run Service**: [https://web-app-prod-4aq3kyjfra-el.a.run.app](https://web-app-prod-4aq3kyjfra-el.a.run.app)
+> ⚠️ *Note: This is an interactive frontend demonstration running with synthetic client state. Real telemetry ingestion, traces persistence, evaluation workers, and live analytics require deploying the complete 13-service backend infrastructure stack (ClickHouse, AlloyDB/PostgreSQL, Redis, Kafka, and Temporal).*
 
 The LLM Observability Platform Deployment Suite is a unified, production-grade, self-hosted infrastructure orchestrator. Whether you are running a lightweight proof-of-concept on a local VM or scaling high-throughput LLM workloads across multi-cloud clusters, this suite provides robust, automated configurations to manage, secure, and monitor your pipelines with zero-lock-in.
 
@@ -96,7 +97,7 @@ docker compose -f packages/llm-obs-infra/docker-compose.yml down
 ### 🖥️ Self-Hosted Admin Consoles & Endpoints
 
 Once launched, access your self-hosted panels:
-- 🌐 **Web App Dashboard (Cloud Live)**: [https://llm-obs-web-app-9664.web.app](https://llm-obs-web-app-9664.web.app) (Direct Cloud Run: [https://web-app-prod-4aq3kyjfra-el.a.run.app](https://web-app-prod-4aq3kyjfra-el.a.run.app))
+- 🌐 **Web App Dashboard (Frontend Demo)**: [https://llm-obs-web-app-9664.web.app](https://llm-obs-web-app-9664.web.app) *(Interactive UI demo; real telemetry requires running the backend services below)*
 - 📊 **Grafana Dashboard Console**: Port `31415` (`http://localhost:31415`) — Default: `admin` / `llmobs_admin_password`
 - ⏱️ **Temporal Web Interface**: Port `31425` (`http://localhost:31425`)
 - 🌐 **Traefik Gateway Dashboard**: Port `31411` (`http://localhost:31411`)
